@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wall clock</title>
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/myScript.js"></script>
+</head>
+
+<body>
+
+<div class="wrapperOuter">
+  <div class="wrapper">
+    
+    <div class="setWrap">
+		<div class="wtb wta">
+			<span class="wtb__circle"></span>
+			
+			<span class="wtb__no--1">1</span>
+			<span class="wtb__no--2">2</span>
+			<span class="wtb__no--3">3</span>
+			<span class="wtb__no--4">4</span>
+			<span class="wtb__no--5">5</span>
+			<span class="wtb__no--6">6</span>
+			<span class="wtb__no--7">7</span>
+			<span class="wtb__no--8">8</span>
+			<span class="wtb__no--9">9</span>
+			<span class="wtb__no--10">10</span>
+			<span class="wtb__no--11">11</span>
+			<span class="wtb__no--12">12</span>
+			
+			
+			<span class="wtb__dot--1"></span>
+			<span class="wtb__dot--2"></span>
+			<span class="wtb__dot--4"></span>
+			<span class="wtb__dot--5"></span>
+			<span class="wtb__dot--7"></span>
+			<span class="wtb__dot--8"></span>
+			<span class="wtb__dot--10"></span>
+			<span class="wtb__dot--11"></span>
+			
+			
+			<span class="wtb__needle--sec sec"></span>
+			<span class="wtb__needle--min min"></span>
+			<span class="wtb__needle--hour hour"></span>
+			<label class="wtb__pin"></label>
+		</div>
+		
+        <div class="clockEditor">
+        	<div class="clockEditor__tile clockEditor__hr">
+				<span class="clockEditor__name">Hour</span>
+            	<label class="clockEditor__plus">+</label>
+                <input type="text" class="clockEditor__input clockEditor__input--hr" readonly>
+                <label class="clockEditor__minus">-</label>
+            </div>
+        	<div class="clockEditor__tile clockEditor__min">
+				<span class="clockEditor__name">Min</span>
+            	<label class="clockEditor__plus">+</label>
+                <input type="text" class="clockEditor__input clockEditor__input--min" readonly>
+                <label class="clockEditor__minus">-</label>
+            </div>
+        	<div class="clockEditor__tile clockEditor__sec">
+				<span class="clockEditor__name">Sec</span>
+            	<label class="clockEditor__plus">+</label>
+                <input type="text" class="clockEditor__input clockEditor__input--sec" readonly>
+                <label class="clockEditor__minus">-</label>
+            </div>
+        </div>
+		<div class="clockEditor">
+            <button class="clockEditor__setTime" disabled>Set time</button>
+            <button class="clockEditor__resetTime">Reset time</button>
+		</div>
+    </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
